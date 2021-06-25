@@ -1,0 +1,20 @@
+<div class="books">
+    <div class="books__card">
+        <div class="books__image">
+            <img [src]="imageUrl" [alt]="title" />
+        </div>
+        
+        <div class="books__content">
+            <header>
+                <h1> {{ title }} </h1>
+                <h4 *ngFor="let author of authors"> {{ author }} </h4>
+            </header>
+
+            <span class="books__description">
+                <span>{{ pageCount }} páginas</span>
+                <span>Editora {{ publisher }}</span>
+                <span>Publicado em {{ published }}</span>
+            </span>
+        </div>
+    </div>
+</div>
